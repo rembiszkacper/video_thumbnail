@@ -1,4 +1,4 @@
-package xyz.justsoft.video_thumbnail;
+package xyz.justsoft.video_thumbnail_custom;
 
 import android.content.Context;
 import android.graphics.Bitmap;

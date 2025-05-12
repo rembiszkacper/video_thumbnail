@@ -31,7 +31,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: xyz.justsoft.video_thumbnail
+        package: xyz.justsoft.video_thumbnail_custom
         pluginClass: VideoThumbnailCustomPlugin
       ios:
         pluginClass: VideoThumbnailCustomPlugin
