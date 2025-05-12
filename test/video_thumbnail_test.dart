@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:video_thumbnail/custom_video_thumbnail.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('video_thumbnail');
@@ -20,7 +20,7 @@ void main() {
 
   test('thumbnailData', () async {
     expect(
-        await VideoThumbnail.thumbnailFile(
+        await CustomVideoThumbnail.thumbnailFile(
             video: 'video',
             thumbnailPath: 'path',
             imageFormat: ImageFormat.JPEG,

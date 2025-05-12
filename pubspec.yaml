@@ -7,12 +7,13 @@ repository: https://github.com/justsoft/video_thumbnail
 issue_tracker: https://github.com/justsoft/video_thumbnail/issues
 
 environment:
-  sdk: '>=2.16.0 <3.0.0'
-  flutter: ">=1.10.0"
+  sdk: 3.7.2
+  flutter: 3.29.2
 
 dependencies:
   flutter:
     sdk: flutter
+  path_provider: ^2.1.5
 
 dev_dependencies:
   flutter_test:
@@ -31,9 +32,9 @@ flutter:
     platforms:
       android:
         package: xyz.justsoft.video_thumbnail
-        pluginClass: VideoThumbnailPlugin
+        pluginClass: VideoThumbnailCustomPlugin
       ios:
-        pluginClass: VideoThumbnailPlugin
+        pluginClass: VideoThumbnailCustomPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
