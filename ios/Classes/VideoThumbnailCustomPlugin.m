@@ -17,7 +17,7 @@
 @implementation VideoThumbnailCustomPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
     FlutterMethodChannel* channel = [FlutterMethodChannel
-                                     methodChannelWithName:@"plugins.justsoft.xyz/video_thumbnail"
+                                     methodChannelWithName:@"plugins.justsoft.xyz/video_thumbnail_custom"
                                      binaryMessenger:[registrar messenger]];
     VideoThumbnailCustomPlugin* instance = [[VideoThumbnailCustomPlugin alloc] init];
     [registrar addMethodCallDelegate:instance channel:channel];
