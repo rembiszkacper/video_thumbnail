@@ -41,7 +41,7 @@ public class VideoThumbnailCustomPlugin implements FlutterPlugin, MethodCallHand
     public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
         context = binding.getApplicationContext();
         executor = Executors.newCachedThreadPool();
-        channel = new MethodChannel(binding.getBinaryMessenger(), "plugins.justsoft.xyz/video_thumbnail");
+        channel = new MethodChannel(binding.getBinaryMessenger(), "plugins.justsoft.xyz/video_thumbnail_custom");
         channel.setMethodCallHandler(this);
     }
 
